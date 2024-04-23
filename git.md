@@ -66,7 +66,7 @@ __Limitation__: Cannot rebase if we have a `MERGED` commit between commits
 ### Git cherry-pick
 
 Pick commit(s) from another location (with hash `commit_id` given) into current branch. The commit id may come from any branch
-For example, I have 3 commit from branch `feat-login`
+For example, I have 3 commits from branch `feat-login`
 
 `a12e3f` `Fix login`
 
