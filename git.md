@@ -4,6 +4,26 @@ The simple commandline for git.
 
 ## Basic use
 
+### Git version
+For checking the version of git that installed on the endpoint
+```sh
+git --version
+```
+
+### Git help
+```sh
+git help -a # Short syntax
+git help --all # full syntax
+```
+
+### Git config
+Config the git on local/global repository
+```sh
+git config --g user.name "<your_username>" # Setting global config user name
+git config --g user.email "<your_email@your_company.com>" # Setting global config email
+git config --list # List on git config on your endpoint
+```
+
 ### Git init
 ```sh
 git init # for init a git repository
@@ -46,6 +66,13 @@ git pull origin <branch_name> # pulling code from remote branch
 For fetching state from current branch (and will need to `git pull` command later to pull the new code from origin)
 ```sh
 git fetch
+```
+
+### Git log
+
+For logging on git commit from local repository
+```sh
+git log
 ```
 
 ## Advanced use
@@ -126,4 +153,4 @@ git cherry-pick commit_id1...commit_id5 # will pick all commits EXCEPT `commit_i
 git cherry-pick commit_id1^..commit_id5 # will pick all commits (commit_id1 commit_id2 commit_id3 commit_id4 commit_id5)
 ```
 
-### Git squash, git log, git diff
+### Git squash, git diff, git submodule, init a secret key, git clone
